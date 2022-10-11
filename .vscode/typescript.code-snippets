@@ -1,0 +1,32 @@
+{
+  "Print to console": {
+    "prefix": "cl",
+    "body": [
+      "console.log('$1');",
+    ],
+    "description": "Log output to console this is a example snippet"
+  },
+
+  "Create new component": {
+    "description": "Snippet for quick create an example component in this project",
+    "prefix": "nc",
+    "body": [
+        "import { FunctionComponent } from \"react\";",
+        "",
+        "interface ${1:Hello}Props {",
+        "  className?: string",
+        "}",
+        "",
+        "const ${1:Hello}: FunctionComponent<${1:Hello}Props> = (props) => {",
+        "  return (",
+        "    ${2:<h1 className={props.className\\} >Hello</h1>}",
+        "  )",
+        "}",
+        "",
+        "${1:Hello}.defaultProps = {",
+        "}",
+        "",
+        "export default ${1:Hello};"
+    ],
+  },
+}
